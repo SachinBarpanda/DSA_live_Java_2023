@@ -1,4 +1,4 @@
-package Lec8;
+package Lec9;
 
 public class TypeCasting {
     public static void main(String[] args) {
