@@ -10,6 +10,6 @@ public class TypeCasting_QPS {
             System.out.println(b);
         }
         //clear
-        
+
     }
 }
