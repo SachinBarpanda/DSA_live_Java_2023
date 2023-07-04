@@ -18,22 +18,17 @@ public class Good_Subarrays {
         }
     }
     public static void divSub(int[] arr , int n ){
-        long [] freq = new long[n];
+        long [] freq = new long[1000001];
         long sum = 0;
-        int count = 0;
         freq[0] = 1;
         for (int i = 0; i < n; i++) {
             sum = sum + arr[i];
-            count++;
-            int idx = (int) (sum % count);
-            if(idx<0){
-                idx+=count;
-            }
+            int idx = (int) Math.abs(sum-(i+1));
             freq[idx] = freq[idx]+1;
         }
 
         long ans = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < freq.length; i++) {
             long p = freq[i];
             ans = ans + (p * (p-1))/2;
         }
