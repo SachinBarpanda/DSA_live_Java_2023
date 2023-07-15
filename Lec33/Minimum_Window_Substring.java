@@ -74,7 +74,7 @@ public class Minimum_Window_Substring {
             }
             ei++;
         }
-        if(si<1 || flag == false){
+        if(si<1 || !flag){
             return "";
         }else{
             return str.substring(startIdx,endIdx+1);
