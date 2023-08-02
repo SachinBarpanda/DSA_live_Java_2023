@@ -6,11 +6,9 @@ public class Lexicographical_Counting {
         counting(0, n);
     }
     public static void counting(int curr , int n){
-
         if(curr>n){
             return;
         }
-
         System.out.println(curr);
         int i = 0;
         if(curr == 0){
